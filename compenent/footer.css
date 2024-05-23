@@ -1,0 +1,32 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center; }
+
+.footer-text {
+  margin-bottom: 20px; }
+
+.buttons {
+  margin-bottom: 20px; }
+
+.accept-button,
+.reject-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer; }
+
+.accept-button:hover,
+.reject-button:hover {
+  background-color: #0056b3; }
+
+.footer-credit {
+  font-size: 14px; }
