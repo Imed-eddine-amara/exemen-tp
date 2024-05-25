@@ -2,6 +2,8 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+// Load environment variables from .env file
+require('dotenv').config();
 
 
 const app = express();
@@ -15,8 +17,8 @@ app.post('/forgetpass', async (req, res) => {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'edineamara@gmail.com',
-      pass: 'maom bivu jrtv eijq'
+      user: process.env.EMAIL, // Your email from .env file
+      pass: process.env.PASSWORD // Your password from .env file
     }
   });
 
